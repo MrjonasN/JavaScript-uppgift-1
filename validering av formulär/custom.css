@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-img {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(img/login-background4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+a {
+    color: #17a2b8;
+}
+
+a:hover {
+    color: #1191a5;
+}
+
+.bg-light {
+    background-color: rgba(248, 249, 250, 0.95)!important;
+}
+
+.navbar-brand i,
+.navbar-brand span {
+    color: #cb0b01;
+    font-size: 1.5rem;
+}
+
+.container-center {
+    height: 100vh;
+    display: flex;
+}
+
+.container-welcome {
+    background-color: #fafafa;
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 0.25rem;
+
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+#regForm {
+    margin: auto;
+    padding: 2rem 2rem;
+    background-color: rgba(255, 255, 255, 0.98);
+    border: 1px solid #eeeeee;
+    border-radius: 0.25rem;
+}
+
+.regForm-custom {
+    width: 60%;
+}
+
+.form-control {
+    border: 1px solid #e1e8ee;
+}
+
+.form-header h2 {
+    color: #212529;
+}
+
+.btn-custom {
+    border-radius: 1.2rem;
+    padding: 0.5rem 0;
+    width: 60%;
+}
+
+.invalid-custom-radio,
+.invalid-custom-checkbox {
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+
+    .regForm-custom {
+        width: 100%;
+    }
+
+    }

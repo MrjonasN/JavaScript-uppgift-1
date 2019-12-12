@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/77508f8fa4.js"></script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="bg-img">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="far fa-snowflake mr-1"></i>
+                    <span>Santa's Workshop</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form id="regForm" class="regForm-custom mt-5">
+                <div class="form-header">
+                    <h2 class="font-weight-bold">Create Account</h2>
+                </div>
+                <div class="form-row mt-4">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="firstname" placeholder="First name">
+                        <div class="invalid-feedback">
+                            Please enter your first name.
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                        <div class="invalid-feedback">
+                            Please enter your last name.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <div class="invalid-feedback">
+                            Please enter your email.
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                            Password must contain at least 8 characters.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <div class="col-form-label">Gender</div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male"
+                                value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female"
+                                value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="other"
+                                value="other">
+                            <label class="form-check-label" for="other">Other</label>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="invalid-custom-radio"></div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Choose who you are</label>
+                        <select id="inputState" class="form-control">
+                            <option selected value="select">Choose...</option>
+                            <option value="1">I am Santa Claus</option>
+                            <option value="2">I am a christmas elf</option>
+                            <option value="3">I am a reindeer</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select who you are
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" id="textarea" rows="5"
+                                placeholder="Tell us how much you like Santa."></textarea>
+                            <div class="invalid-feedback">
+                                Santa will be very angry if you don't write something.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            I Agree to <a href="#">Terms and Conditions</a>
+                        </label>
+                        <div class="invalid-custom-checkbox"></div>
+                    </div>
+                </div>
+
+                <p>Already have an account?<a href="login.html"> Log in here</a></p>
+
+                <button id="btnSubmit" type="submit" class="btn btn-custom btn-info btn-block mt-4 mb-1 mx-auto">Sign
+                    up</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
