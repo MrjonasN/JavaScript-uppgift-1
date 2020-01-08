@@ -1,5 +1,7 @@
 $(function () {
 
+    // --- FUNCTIONS --- //
+
     // Function för att kolla om fälten har innehåll
     function validateInput(id) {
         if ($(id).val() === '') {
@@ -101,15 +103,6 @@ $(function () {
             case 'password':
                 validatePasswordLength()
                 break;
-            // case 'male':
-            //     validateRadio()
-            //     break;
-            // case 'female':
-            //     validateRadio()
-            //     break;
-            // case 'other':
-            //     validateRadio()
-            //     break;
             case 'gridCheck':
                 validateCheckbox()
                 break;
@@ -118,14 +111,15 @@ $(function () {
     $('textarea').blur(() => {
         validateInput('#textarea')
     })
-
     $('select').blur(() => {
         validateSelect();
     })
 
-    // Validera formuläret vid submit
-    $('#regForm').submit((e) => {
 
+    // --- SUBMIT EVENTS --- //
+
+    // Registrering. Validera alla fält vid submit 
+    $('.signup-form').submit((e) => {
         validateInput('#firstname');
         validateInput('#lastname');
         validateEmail();
@@ -135,15 +129,25 @@ $(function () {
         validateInput('#textarea');
         validateCheckbox();
 
-        // Är allt korrekt så skicka vidare till welcome.html
-        let url = 'welcome.html';
         if (validateInput('#firstname') === true && validateInput('#lastname') === true && validateEmail() === true && validatePasswordLength() === true && validateRadio() === true && validateSelect() === true && validateInput('#textarea') === true && validateCheckbox() === true) {
-            window.location.href = url;
-            return false
+            window.location.href = 'account.html';
+            return false;
         } else {
             e.preventDefault();
         }
+    });
 
+    // Inlogg. Validera alla fält vid submit 
+    $('.signin-form').submit((e) => {
+        validateEmail();
+        validatePasswordLength();
+
+        if (validateEmail() === true && validatePasswordLength() === true) {
+            window.location.href = 'welcome.html';
+            return false;
+        } else {
+            e.preventDefault();
+        }
     });
 
 });

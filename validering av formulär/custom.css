@@ -5,7 +5,7 @@ body {
 }
 
 .bg-img {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(img/login-background4.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url(img/login-background4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +26,7 @@ a:hover {
 
 .navbar-brand i,
 .navbar-brand span {
-    color: #cb0b01;
+    color: #ffffff;
     font-size: 1.5rem;
 }
 
@@ -36,17 +36,14 @@ a:hover {
 }
 
 .container-welcome {
-    background-color: #fafafa;
     padding: 3rem;
     margin-top: 3rem;
     border-radius: 0.25rem;
-
 }
 
 .hero h1 {
-    font-size: 3.5rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 #regForm {
@@ -70,9 +67,9 @@ a:hover {
 }
 
 .btn-custom {
-    border-radius: 1.2rem;
+    border-radius: .9rem;
     padding: 0.5rem 0;
-    width: 60%;
+    width: 80%;
 }
 
 .invalid-custom-radio,
@@ -88,4 +85,4 @@ a:hover {
         width: 100%;
     }
 
-    }
+}
